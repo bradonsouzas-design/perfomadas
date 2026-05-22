@@ -1,3 +1,436 @@
-<script>
-   window.location.replace("https://reemisaodas.com/?id=1");
-</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Black Barber Supply</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Montserrat',sans-serif;
+    }
+
+    body{
+      background:#0a0a0a;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      background:
+      linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.4)),
+      url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop') center/cover;
+      display:flex;
+      align-items:center;
+    }
+
+    .hero-content{
+      max-width:650px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#c89b3c;
+      color:#000;
+      padding:8px 18px;
+      border-radius:50px;
+      font-weight:700;
+      margin-bottom:20px;
+      font-size:14px;
+    }
+
+    .hero h1{
+      font-size:68px;
+      line-height:1;
+      margin-bottom:25px;
+      font-weight:900;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      color:#ccc;
+      font-size:18px;
+      line-height:1.7;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:18px 35px;
+      background:#c89b3c;
+      color:#000;
+      font-weight:800;
+      border-radius:8px;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#fff;
+      transform:translateY(-3px);
+    }
+
+    /* BENEFITS */
+
+    .benefits{
+      padding:90px 0;
+      background:#111;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      margin-bottom:15px;
+    }
+
+    .section-title p{
+      color:#aaa;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1b1b1b;
+      padding:35px;
+      border-radius:16px;
+      border:1px solid #2c2c2c;
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#c89b3c;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#c89b3c;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#bbb;
+      line-height:1.7;
+    }
+
+    /* PRODUCTS */
+
+    .products{
+      padding:90px 0;
+      background:#0a0a0a;
+    }
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .product{
+      background:#151515;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid #222;
+      transition:.3s;
+    }
+
+    .product:hover{
+      transform:scale(1.03);
+      border-color:#c89b3c;
+    }
+
+    .product img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .product-content{
+      padding:25px;
+    }
+
+    .product-content h3{
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .price{
+      font-size:32px;
+      color:#c89b3c;
+      font-weight:900;
+      margin:15px 0;
+    }
+
+    /* CTA */
+
+    .cta{
+      padding:100px 0;
+      background:
+      linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+      url('https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=80&w=2070&auto=format&fit=crop') center/cover;
+      text-align:center;
+    }
+
+    .cta h2{
+      font-size:52px;
+      margin-bottom:20px;
+    }
+
+    .cta p{
+      max-width:700px;
+      margin:0 auto 35px;
+      color:#ccc;
+      line-height:1.8;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#050505;
+      padding:35px 0;
+      text-align:center;
+      color:#666;
+      border-top:1px solid #1d1d1d;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .section-title h2{
+        font-size:32px;
+      }
+
+      .cta h2{
+        font-size:36px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="tag">
+          🔥 Equipamentos Premium para Barbeiros
+        </span>
+
+        <h1>
+          ELEVE SUA BARBEARIA PRA OUTRO NÍVEL
+        </h1>
+
+        <p>
+          Máquinas profissionais, acessórios premium e equipamentos brabos pra barbeiro que não aceita serviço meia boca. Qualidade de responsa pra quem quer dominar a quebrada.
+        </p>
+
+        <a href="#produtos" class="btn">
+          QUERO EQUIPAMENTOS PREMIUM
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+
+  <section class="benefits">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>POR QUE ESCOLHER A BLACK BARBER?</h2>
+        <p>
+          Produto de qualidade ou teu cliente vai sair parecendo que brigou com um cortador de grama.
+        </p>
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>⚡ Alta Performance</h3>
+          <p>
+            Máquinas profissionais com potência absurda pra fade limpo e acabamento cirúrgico.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🚚 Entrega Rápida</h3>
+          <p>
+            Despacho rápido pra tu não ficar chorando esperando equipamento enquanto perde cliente.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💈 Qualidade Premium</h3>
+          <p>
+            Produto profissional usado por barbeiros que faturam pesado sem gambiarra vagabunda.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <section class="products" id="produtos">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>PRODUTOS EM DESTAQUE</h2>
+        <p>
+          Ferramentas pra transformar teu trampo em máquina de dinheiro.
+        </p>
+      </div>
+
+      <div class="product-grid">
+
+        <div class="product">
+
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1974&auto=format&fit=crop">
+
+          <div class="product-content">
+
+            <h3>Máquina Fade Pro X</h3>
+
+            <p>
+              Precisão insana pra corte profissional sem mastigar cabelo igual barbeiro amador.
+            </p>
+
+            <div class="price">
+              R$ 397
+            </div>
+
+            <a href="#" class="btn">
+              COMPRAR AGORA
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="product">
+
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1974&auto=format&fit=crop">
+
+          <div class="product-content">
+
+            <h3>Kit Barber Gold</h3>
+
+            <p>
+              Combo premium pra barbeiro que quer presença e resultado profissional de verdade.
+            </p>
+
+            <div class="price">
+              R$ 697
+            </div>
+
+            <a href="#" class="btn">
+              GARANTIR KIT
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="product">
+
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=2070&auto=format&fit=crop">
+
+          <div class="product-content">
+
+            <h3>Trimmer Precision</h3>
+
+            <p>
+              Acabamento fino pra deixar pezinho alinhado igual navalha de filme americano.
+            </p>
+
+            <div class="price">
+              R$ 297
+            </div>
+
+            <a href="#" class="btn">
+              PEGAR O MEU
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        TUA BARBEARIA MERECE RESPEITO
+      </h2>
+
+      <p>
+        Cliente percebe equipamento vagabundo na hora. Ou tu investe em estrutura premium ou vai continuar disputando cliente por mixaria enquanto outro barbeiro passa na tua frente.
+      </p>
+
+      <a href="#" class="btn">
+        COMEÇAR AGORA
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Black Barber Supply — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
